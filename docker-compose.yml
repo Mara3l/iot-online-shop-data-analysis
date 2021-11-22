@@ -1,0 +1,44 @@
+version: "3"
+services:
+  postgres:
+    container_name: iot-eshop-postgres
+    image: postgres:latest
+    ports:
+      - "8081:5432"
+    volumes:
+      - /data/iot-eshop-postgres:/data/iot-eshop-postgres
+    env_file:
+      - docker.env
+    networks:
+      - postgres
+
+  pgadmin:
+    links:
+      - postgres:postgres
+    container_name: iot-eshop-pgadmin
+    image: dpage/pgadmin4
+    ports:
+      - "8080:80"
+    volumes:
+      - /data/iot-eshop-pgadmin:/root/.pgadmin
+    env_file:
+      - docker.env
+    networks:
+      - postgres
+
+  gooddata:
+    container_name: gooddata
+    image: gooddata/gooddata-cn-ce:latest
+    ports:
+      - "3000:3000"
+      - "5432:5432"
+    volumes:
+      - /data/iot-eshop-gooddata
+    stdin_open: true
+    tty: true
+    environment:
+      - LICENSE_AND_PRIVACY_POLICY_ACCEPTED=YES
+
+networks:
+  postgres:
+    driver: bridge
