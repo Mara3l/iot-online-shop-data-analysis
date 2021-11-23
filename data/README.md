@@ -17,3 +17,7 @@ $ psql -h localhost -p 8081 -d docker -U docker --password
 ```
 $ docker inspect iot-eshop-postgres -f "{{json .NetworkSettings.Networks }}"
 ```
+
+### Import Data
+
+Data were imported in pg admin tool.
