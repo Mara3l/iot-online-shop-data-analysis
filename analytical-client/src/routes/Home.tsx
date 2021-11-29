@@ -9,7 +9,7 @@ const Home = () => {
         <Page>
             <h1>Short term analysis</h1>
             <div style={{ height: "300px" }}>
-                <InsightView insight={Insights.OrdersStatusWeek} />
+                <InsightView insight={Insights.OrdersStatusLast7Days} />
             </div>
 
             <h1>Long term analysis</h1>
@@ -20,4 +20,5 @@ const Home = () => {
         </Page>
     );
 };
+
 export default Home;

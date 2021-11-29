@@ -1,5 +1,5 @@
 /* eslint-disable */
-/* THIS FILE WAS AUTO-GENERATED USING CATALOG EXPORTER; YOU SHOULD NOT EDIT THIS FILE; GENERATE TIME: 2021-11-29T10:13:09.937Z; */
+/* THIS FILE WAS AUTO-GENERATED USING CATALOG EXPORTER; YOU SHOULD NOT EDIT THIS FILE; GENERATE TIME: 2021-12-13T15:39:43.384Z; */
 // @ts-ignore ignore unused imports here if they happen (e.g. when there is no measure in the workspace)
 import {
     newAttribute,
@@ -11,25 +11,25 @@ import {
 } from "@gooddata/sdk-model";
 
 /**
- * Attribute Title: Id
- * Attribute ID: orderitems.id
+ * Attribute Title: Order Item Id
+ * Attribute ID: order_items.id
  */
-export const Id: IAttribute = newAttribute("orderitems.id");
+export const OrderItemId: IAttribute = newAttribute("order_items.id");
 /**
- * Attribute Title: Id
+ * Attribute Title: Order Id
  * Attribute ID: orders.id
  */
-export const Id_1: IAttribute = newAttribute("orders.id");
+export const OrderId: IAttribute = newAttribute("orders.id");
 /**
  * Attribute Title: Status
  * Attribute ID: orders.status
  */
 export const Status: IAttribute = newAttribute("orders.status");
 /**
- * Attribute Title: Id
+ * Attribute Title: Product Id
  * Attribute ID: products.id
  */
-export const Id_2: IAttribute = newAttribute("products.id");
+export const ProductId: IAttribute = newAttribute("products.id");
 /**
  * Attribute Title: Name
  * Attribute ID: products.name
@@ -46,67 +46,61 @@ export const Type: IAttribute = newAttribute("products.type");
  */
 export const City: IAttribute = newAttribute("users.city");
 /**
- * Attribute Title: Firstname
- * Attribute ID: users.firstname
+ * Attribute Title: First name
+ * Attribute ID: users.first_name
  */
-export const Firstname: IAttribute = newAttribute("users.firstname");
+export const FirstName: IAttribute = newAttribute("users.first_name");
 /**
  * Attribute Title: Gender
  * Attribute ID: users.gender
  */
 export const Gender: IAttribute = newAttribute("users.gender");
 /**
- * Attribute Title: Id
+ * Attribute Title: User Id
  * Attribute ID: users.id
  */
-export const Id_3: IAttribute = newAttribute("users.id");
+export const UserId: IAttribute = newAttribute("users.id");
 /**
- * Attribute Title: Lastname
- * Attribute ID: users.lastname
+ * Attribute Title: Last name
+ * Attribute ID: users.last_name
  */
-export const Lastname: IAttribute = newAttribute("users.lastname");
-/**
- * Metric Title: Average age
- * Metric ID: average_age
- * Metric Type: MAQL Metric
- */
-export const AverageAge: IMeasure<IMeasureDefinition> = newMeasure(idRef("average_age", "measure"));
+export const LastName: IAttribute = newAttribute("users.last_name");
 /**
  * Fact Title: Quantity
- * Fact ID: orderitems.quantity
+ * Fact ID: order_items.quantity
  */
 export const Quantity = {
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: sum
      */
-    Sum: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("sum")),
+    Sum: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("sum")),
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: avg
-     */ Avg: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("avg")),
+     */ Avg: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("avg")),
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: min
-     */ Min: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("min")),
+     */ Min: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("min")),
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: max
-     */ Max: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("max")),
+     */ Max: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("max")),
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: median
-     */ Median: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("median")),
+     */ Median: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("median")),
     /**
      * Fact Title: Quantity
-     * Fact ID: orderitems.quantity
+     * Fact ID: order_items.quantity
      * Fact Aggregation: runsum
-     */ Runsum: newMeasure(idRef("orderitems.quantity", "fact"), m => m.aggregation("runsum")),
+     */ Runsum: newMeasure(idRef("order_items.quantity", "fact"), m => m.aggregation("runsum")),
 };
 /**
  * Fact Title: Cost
@@ -220,548 +214,552 @@ export const Age = {
      */ Runsum: newMeasure(idRef("users.age", "fact"), m => m.aggregation("runsum")),
 };
 /**
- * Attribute Title: Createdat - Year
- * Attribute ID: createdat.year
+ * Attribute Title: Solved at - Year
+ * Attribute ID: solved_at.year
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatYear: IAttribute = newAttribute("createdat.year");
+export const SolvedAtYear: IAttribute = newAttribute("solved_at.year");
 /**
- * Attribute Title: Createdat - Week of Year
- * Attribute ID: createdat.weekOfYear
+ * Attribute Title: Solved at - Week of Year
+ * Attribute ID: solved_at.weekOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatWeekOfYear: IAttribute = newAttribute("createdat.weekOfYear");
+export const SolvedAtWeekOfYear: IAttribute = newAttribute("solved_at.weekOfYear");
 /**
- * Attribute Title: Createdat - Week/Year
- * Attribute ID: createdat.week
+ * Attribute Title: Solved at - Week/Year
+ * Attribute ID: solved_at.week
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatWeekYear: IAttribute = newAttribute("createdat.week");
+export const SolvedAtWeekYear: IAttribute = newAttribute("solved_at.week");
 /**
- * Attribute Title: Createdat - Quarter of Year
- * Attribute ID: createdat.quarterOfYear
+ * Attribute Title: Solved at - Quarter of Year
+ * Attribute ID: solved_at.quarterOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatQuarterOfYear: IAttribute = newAttribute("createdat.quarterOfYear");
+export const SolvedAtQuarterOfYear: IAttribute = newAttribute("solved_at.quarterOfYear");
 /**
- * Attribute Title: Createdat - Quarter/Year
- * Attribute ID: createdat.quarter
+ * Attribute Title: Solved at - Quarter/Year
+ * Attribute ID: solved_at.quarter
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatQuarterYear: IAttribute = newAttribute("createdat.quarter");
+export const SolvedAtQuarterYear: IAttribute = newAttribute("solved_at.quarter");
 /**
- * Attribute Title: Createdat - Month of Year
- * Attribute ID: createdat.monthOfYear
+ * Attribute Title: Solved at - Month of Year
+ * Attribute ID: solved_at.monthOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatMonthOfYear: IAttribute = newAttribute("createdat.monthOfYear");
+export const SolvedAtMonthOfYear: IAttribute = newAttribute("solved_at.monthOfYear");
 /**
- * Attribute Title: Createdat - Month/Year
- * Attribute ID: createdat.month
+ * Attribute Title: Solved at - Month/Year
+ * Attribute ID: solved_at.month
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatMonthYear: IAttribute = newAttribute("createdat.month");
+export const SolvedAtMonthYear: IAttribute = newAttribute("solved_at.month");
 /**
- * Attribute Title: Createdat - Minute of Hour
- * Attribute ID: createdat.minuteOfHour
+ * Attribute Title: Solved at - Minute of Hour
+ * Attribute ID: solved_at.minuteOfHour
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatMinuteOfHour: IAttribute = newAttribute("createdat.minuteOfHour");
+export const SolvedAtMinuteOfHour: IAttribute = newAttribute("solved_at.minuteOfHour");
 /**
- * Attribute Title: Createdat - Minute
- * Attribute ID: createdat.minute
+ * Attribute Title: Solved at - Minute
+ * Attribute ID: solved_at.minute
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatMinute: IAttribute = newAttribute("createdat.minute");
+export const SolvedAtMinute: IAttribute = newAttribute("solved_at.minute");
 /**
- * Attribute Title: Createdat - Hour of Day
- * Attribute ID: createdat.hourOfDay
+ * Attribute Title: Solved at - Hour of Day
+ * Attribute ID: solved_at.hourOfDay
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatHourOfDay: IAttribute = newAttribute("createdat.hourOfDay");
+export const SolvedAtHourOfDay: IAttribute = newAttribute("solved_at.hourOfDay");
 /**
- * Attribute Title: Createdat - Hour
- * Attribute ID: createdat.hour
+ * Attribute Title: Solved at - Hour
+ * Attribute ID: solved_at.hour
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatHour: IAttribute = newAttribute("createdat.hour");
+export const SolvedAtHour: IAttribute = newAttribute("solved_at.hour");
 /**
- * Attribute Title: Createdat - Day of Year
- * Attribute ID: createdat.dayOfYear
+ * Attribute Title: Solved at - Day of Year
+ * Attribute ID: solved_at.dayOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatDayOfYear: IAttribute = newAttribute("createdat.dayOfYear");
+export const SolvedAtDayOfYear: IAttribute = newAttribute("solved_at.dayOfYear");
 /**
- * Attribute Title: Createdat - Day of Week
- * Attribute ID: createdat.dayOfWeek
+ * Attribute Title: Solved at - Day of Week
+ * Attribute ID: solved_at.dayOfWeek
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatDayOfWeek: IAttribute = newAttribute("createdat.dayOfWeek");
+export const SolvedAtDayOfWeek: IAttribute = newAttribute("solved_at.dayOfWeek");
 /**
- * Attribute Title: Createdat - Day of Month
- * Attribute ID: createdat.dayOfMonth
+ * Attribute Title: Solved at - Day of Month
+ * Attribute ID: solved_at.dayOfMonth
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatDayOfMonth: IAttribute = newAttribute("createdat.dayOfMonth");
+export const SolvedAtDayOfMonth: IAttribute = newAttribute("solved_at.dayOfMonth");
 /**
- * Attribute Title: Createdat - Date
- * Attribute ID: createdat.day
+ * Attribute Title: Solved at - Date
+ * Attribute ID: solved_at.day
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const CreatedatDate: IAttribute = newAttribute("createdat.day");
+export const SolvedAtDate: IAttribute = newAttribute("solved_at.day");
 /**
- * Attribute Title: Solvedat - Year
- * Attribute ID: solvedat.year
+ * Attribute Title: Created at - Year
+ * Attribute ID: created_at.year
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatYear: IAttribute = newAttribute("solvedat.year");
+export const CreatedAtYear: IAttribute = newAttribute("created_at.year");
 /**
- * Attribute Title: Solvedat - Week of Year
- * Attribute ID: solvedat.weekOfYear
+ * Attribute Title: Created at - Week of Year
+ * Attribute ID: created_at.weekOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatWeekOfYear: IAttribute = newAttribute("solvedat.weekOfYear");
+export const CreatedAtWeekOfYear: IAttribute = newAttribute("created_at.weekOfYear");
 /**
- * Attribute Title: Solvedat - Week/Year
- * Attribute ID: solvedat.week
+ * Attribute Title: Created at - Week/Year
+ * Attribute ID: created_at.week
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatWeekYear: IAttribute = newAttribute("solvedat.week");
+export const CreatedAtWeekYear: IAttribute = newAttribute("created_at.week");
 /**
- * Attribute Title: Solvedat - Quarter of Year
- * Attribute ID: solvedat.quarterOfYear
+ * Attribute Title: Created at - Quarter of Year
+ * Attribute ID: created_at.quarterOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatQuarterOfYear: IAttribute = newAttribute("solvedat.quarterOfYear");
+export const CreatedAtQuarterOfYear: IAttribute = newAttribute("created_at.quarterOfYear");
 /**
- * Attribute Title: Solvedat - Quarter/Year
- * Attribute ID: solvedat.quarter
+ * Attribute Title: Created at - Quarter/Year
+ * Attribute ID: created_at.quarter
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatQuarterYear: IAttribute = newAttribute("solvedat.quarter");
+export const CreatedAtQuarterYear: IAttribute = newAttribute("created_at.quarter");
 /**
- * Attribute Title: Solvedat - Month of Year
- * Attribute ID: solvedat.monthOfYear
+ * Attribute Title: Created at - Month of Year
+ * Attribute ID: created_at.monthOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatMonthOfYear: IAttribute = newAttribute("solvedat.monthOfYear");
+export const CreatedAtMonthOfYear: IAttribute = newAttribute("created_at.monthOfYear");
 /**
- * Attribute Title: Solvedat - Month/Year
- * Attribute ID: solvedat.month
+ * Attribute Title: Created at - Month/Year
+ * Attribute ID: created_at.month
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatMonthYear: IAttribute = newAttribute("solvedat.month");
+export const CreatedAtMonthYear: IAttribute = newAttribute("created_at.month");
 /**
- * Attribute Title: Solvedat - Minute of Hour
- * Attribute ID: solvedat.minuteOfHour
+ * Attribute Title: Created at - Minute of Hour
+ * Attribute ID: created_at.minuteOfHour
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatMinuteOfHour: IAttribute = newAttribute("solvedat.minuteOfHour");
+export const CreatedAtMinuteOfHour: IAttribute = newAttribute("created_at.minuteOfHour");
 /**
- * Attribute Title: Solvedat - Minute
- * Attribute ID: solvedat.minute
+ * Attribute Title: Created at - Minute
+ * Attribute ID: created_at.minute
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatMinute: IAttribute = newAttribute("solvedat.minute");
+export const CreatedAtMinute: IAttribute = newAttribute("created_at.minute");
 /**
- * Attribute Title: Solvedat - Hour of Day
- * Attribute ID: solvedat.hourOfDay
+ * Attribute Title: Created at - Hour of Day
+ * Attribute ID: created_at.hourOfDay
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatHourOfDay: IAttribute = newAttribute("solvedat.hourOfDay");
+export const CreatedAtHourOfDay: IAttribute = newAttribute("created_at.hourOfDay");
 /**
- * Attribute Title: Solvedat - Hour
- * Attribute ID: solvedat.hour
+ * Attribute Title: Created at - Hour
+ * Attribute ID: created_at.hour
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatHour: IAttribute = newAttribute("solvedat.hour");
+export const CreatedAtHour: IAttribute = newAttribute("created_at.hour");
 /**
- * Attribute Title: Solvedat - Day of Year
- * Attribute ID: solvedat.dayOfYear
+ * Attribute Title: Created at - Day of Year
+ * Attribute ID: created_at.dayOfYear
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatDayOfYear: IAttribute = newAttribute("solvedat.dayOfYear");
+export const CreatedAtDayOfYear: IAttribute = newAttribute("created_at.dayOfYear");
 /**
- * Attribute Title: Solvedat - Day of Week
- * Attribute ID: solvedat.dayOfWeek
+ * Attribute Title: Created at - Day of Week
+ * Attribute ID: created_at.dayOfWeek
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatDayOfWeek: IAttribute = newAttribute("solvedat.dayOfWeek");
+export const CreatedAtDayOfWeek: IAttribute = newAttribute("created_at.dayOfWeek");
 /**
- * Attribute Title: Solvedat - Day of Month
- * Attribute ID: solvedat.dayOfMonth
+ * Attribute Title: Created at - Day of Month
+ * Attribute ID: created_at.dayOfMonth
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatDayOfMonth: IAttribute = newAttribute("solvedat.dayOfMonth");
+export const CreatedAtDayOfMonth: IAttribute = newAttribute("created_at.dayOfMonth");
 /**
- * Attribute Title: Solvedat - Date
- * Attribute ID: solvedat.day
+ * Attribute Title: Created at - Date
+ * Attribute ID: created_at.day
  * @deprecated constants generated for date attributes are deprecated in favor of DateDatasets mapping
  */
-export const SolvedatDate: IAttribute = newAttribute("solvedat.day");
+export const CreatedAtDate: IAttribute = newAttribute("created_at.day");
 /** Available Date Data Sets */
 export const DateDatasets = {
     /**
-     * Date Data Set Title: Createdat
-     * Date Data Set ID: createdat
+     * Date Data Set Title: Solved at
+     * Date Data Set ID: solved_at
      */
-    Createdat: {
-        ref: idRef("createdat", "dataSet"),
-        identifier: "createdat",
+    SolvedAt: {
+        ref: idRef("solved_at", "dataSet"),
+        identifier: "solved_at",
         /**
-         * Date Attribute: Createdat - Year
-         * Date Attribute ID: createdat.year
-         */ CreatedatYear: {
-            ref: idRef("createdat.year", "attribute"),
-            identifier: "createdat.year",
+         * Date Attribute: Solved at - Year
+         * Date Attribute ID: solved_at.year
+         */ SolvedAtYear: {
+            ref: idRef("solved_at.year", "attribute"),
+            identifier: "solved_at.year",
             /**
-             * Display Form Title: Createdat - Year
-             * Display Form ID: createdat.year
-             */ Default: newAttribute("createdat.year"),
+             * Display Form Title: Solved at - Year
+             * Display Form ID: solved_at.year
+             */ Default: newAttribute("solved_at.year"),
         },
         /**
-         * Date Attribute: Createdat - Week of Year
-         * Date Attribute ID: createdat.weekOfYear
-         */ CreatedatWeekOfYear: {
-            ref: idRef("createdat.weekOfYear", "attribute"),
-            identifier: "createdat.weekOfYear",
+         * Date Attribute: Solved at - Week of Year
+         * Date Attribute ID: solved_at.weekOfYear
+         */ SolvedAtWeekOfYear: {
+            ref: idRef("solved_at.weekOfYear", "attribute"),
+            identifier: "solved_at.weekOfYear",
             /**
-             * Display Form Title: Createdat - Week of Year
-             * Display Form ID: createdat.weekOfYear
-             */ Default: newAttribute("createdat.weekOfYear"),
+             * Display Form Title: Solved at - Week of Year
+             * Display Form ID: solved_at.weekOfYear
+             */ Default: newAttribute("solved_at.weekOfYear"),
         },
         /**
-         * Date Attribute: Createdat - Week/Year
-         * Date Attribute ID: createdat.week
-         */ CreatedatWeekYear: {
-            ref: idRef("createdat.week", "attribute"),
-            identifier: "createdat.week",
+         * Date Attribute: Solved at - Week/Year
+         * Date Attribute ID: solved_at.week
+         */ SolvedAtWeekYear: {
+            ref: idRef("solved_at.week", "attribute"),
+            identifier: "solved_at.week",
             /**
-             * Display Form Title: Createdat - Week/Year
-             * Display Form ID: createdat.week
-             */ Default: newAttribute("createdat.week"),
+             * Display Form Title: Solved at - Week/Year
+             * Display Form ID: solved_at.week
+             */ Default: newAttribute("solved_at.week"),
         },
         /**
-         * Date Attribute: Createdat - Quarter of Year
-         * Date Attribute ID: createdat.quarterOfYear
-         */ CreatedatQuarterOfYear: {
-            ref: idRef("createdat.quarterOfYear", "attribute"),
-            identifier: "createdat.quarterOfYear",
+         * Date Attribute: Solved at - Quarter of Year
+         * Date Attribute ID: solved_at.quarterOfYear
+         */ SolvedAtQuarterOfYear: {
+            ref: idRef("solved_at.quarterOfYear", "attribute"),
+            identifier: "solved_at.quarterOfYear",
             /**
-             * Display Form Title: Createdat - Quarter of Year
-             * Display Form ID: createdat.quarterOfYear
-             */ Default: newAttribute("createdat.quarterOfYear"),
+             * Display Form Title: Solved at - Quarter of Year
+             * Display Form ID: solved_at.quarterOfYear
+             */ Default: newAttribute("solved_at.quarterOfYear"),
         },
         /**
-         * Date Attribute: Createdat - Quarter/Year
-         * Date Attribute ID: createdat.quarter
-         */ CreatedatQuarterYear: {
-            ref: idRef("createdat.quarter", "attribute"),
-            identifier: "createdat.quarter",
+         * Date Attribute: Solved at - Quarter/Year
+         * Date Attribute ID: solved_at.quarter
+         */ SolvedAtQuarterYear: {
+            ref: idRef("solved_at.quarter", "attribute"),
+            identifier: "solved_at.quarter",
             /**
-             * Display Form Title: Createdat - Quarter/Year
-             * Display Form ID: createdat.quarter
-             */ Default: newAttribute("createdat.quarter"),
+             * Display Form Title: Solved at - Quarter/Year
+             * Display Form ID: solved_at.quarter
+             */ Default: newAttribute("solved_at.quarter"),
         },
         /**
-         * Date Attribute: Createdat - Month of Year
-         * Date Attribute ID: createdat.monthOfYear
-         */ CreatedatMonthOfYear: {
-            ref: idRef("createdat.monthOfYear", "attribute"),
-            identifier: "createdat.monthOfYear",
+         * Date Attribute: Solved at - Month of Year
+         * Date Attribute ID: solved_at.monthOfYear
+         */ SolvedAtMonthOfYear: {
+            ref: idRef("solved_at.monthOfYear", "attribute"),
+            identifier: "solved_at.monthOfYear",
             /**
-             * Display Form Title: Createdat - Month of Year
-             * Display Form ID: createdat.monthOfYear
-             */ Default: newAttribute("createdat.monthOfYear"),
+             * Display Form Title: Solved at - Month of Year
+             * Display Form ID: solved_at.monthOfYear
+             */ Default: newAttribute("solved_at.monthOfYear"),
         },
         /**
-         * Date Attribute: Createdat - Month/Year
-         * Date Attribute ID: createdat.month
-         */ CreatedatMonthYear: {
-            ref: idRef("createdat.month", "attribute"),
-            identifier: "createdat.month",
+         * Date Attribute: Solved at - Month/Year
+         * Date Attribute ID: solved_at.month
+         */ SolvedAtMonthYear: {
+            ref: idRef("solved_at.month", "attribute"),
+            identifier: "solved_at.month",
             /**
-             * Display Form Title: Createdat - Month/Year
-             * Display Form ID: createdat.month
-             */ Default: newAttribute("createdat.month"),
+             * Display Form Title: Solved at - Month/Year
+             * Display Form ID: solved_at.month
+             */ Default: newAttribute("solved_at.month"),
         },
         /**
-         * Date Attribute: Createdat - Minute of Hour
-         * Date Attribute ID: createdat.minuteOfHour
-         */ CreatedatMinuteOfHour: {
-            ref: idRef("createdat.minuteOfHour", "attribute"),
-            identifier: "createdat.minuteOfHour",
+         * Date Attribute: Solved at - Minute of Hour
+         * Date Attribute ID: solved_at.minuteOfHour
+         */ SolvedAtMinuteOfHour: {
+            ref: idRef("solved_at.minuteOfHour", "attribute"),
+            identifier: "solved_at.minuteOfHour",
             /**
-             * Display Form Title: Createdat - Minute of Hour
-             * Display Form ID: createdat.minuteOfHour
-             */ Default: newAttribute("createdat.minuteOfHour"),
+             * Display Form Title: Solved at - Minute of Hour
+             * Display Form ID: solved_at.minuteOfHour
+             */ Default: newAttribute("solved_at.minuteOfHour"),
         },
         /**
-         * Date Attribute: Createdat - Minute
-         * Date Attribute ID: createdat.minute
-         */ CreatedatMinute: {
-            ref: idRef("createdat.minute", "attribute"),
-            identifier: "createdat.minute",
+         * Date Attribute: Solved at - Minute
+         * Date Attribute ID: solved_at.minute
+         */ SolvedAtMinute: {
+            ref: idRef("solved_at.minute", "attribute"),
+            identifier: "solved_at.minute",
             /**
-             * Display Form Title: Createdat - Minute
-             * Display Form ID: createdat.minute
-             */ Default: newAttribute("createdat.minute"),
+             * Display Form Title: Solved at - Minute
+             * Display Form ID: solved_at.minute
+             */ Default: newAttribute("solved_at.minute"),
         },
         /**
-         * Date Attribute: Createdat - Hour of Day
-         * Date Attribute ID: createdat.hourOfDay
-         */ CreatedatHourOfDay: {
-            ref: idRef("createdat.hourOfDay", "attribute"),
-            identifier: "createdat.hourOfDay",
+         * Date Attribute: Solved at - Hour of Day
+         * Date Attribute ID: solved_at.hourOfDay
+         */ SolvedAtHourOfDay: {
+            ref: idRef("solved_at.hourOfDay", "attribute"),
+            identifier: "solved_at.hourOfDay",
             /**
-             * Display Form Title: Createdat - Hour of Day
-             * Display Form ID: createdat.hourOfDay
-             */ Default: newAttribute("createdat.hourOfDay"),
+             * Display Form Title: Solved at - Hour of Day
+             * Display Form ID: solved_at.hourOfDay
+             */ Default: newAttribute("solved_at.hourOfDay"),
         },
         /**
-         * Date Attribute: Createdat - Hour
-         * Date Attribute ID: createdat.hour
-         */ CreatedatHour: {
-            ref: idRef("createdat.hour", "attribute"),
-            identifier: "createdat.hour",
+         * Date Attribute: Solved at - Hour
+         * Date Attribute ID: solved_at.hour
+         */ SolvedAtHour: {
+            ref: idRef("solved_at.hour", "attribute"),
+            identifier: "solved_at.hour",
             /**
-             * Display Form Title: Createdat - Hour
-             * Display Form ID: createdat.hour
-             */ Default: newAttribute("createdat.hour"),
+             * Display Form Title: Solved at - Hour
+             * Display Form ID: solved_at.hour
+             */ Default: newAttribute("solved_at.hour"),
         },
         /**
-         * Date Attribute: Createdat - Day of Year
-         * Date Attribute ID: createdat.dayOfYear
-         */ CreatedatDayOfYear: {
-            ref: idRef("createdat.dayOfYear", "attribute"),
-            identifier: "createdat.dayOfYear",
+         * Date Attribute: Solved at - Day of Year
+         * Date Attribute ID: solved_at.dayOfYear
+         */ SolvedAtDayOfYear: {
+            ref: idRef("solved_at.dayOfYear", "attribute"),
+            identifier: "solved_at.dayOfYear",
             /**
-             * Display Form Title: Createdat - Day of Year
-             * Display Form ID: createdat.dayOfYear
-             */ Default: newAttribute("createdat.dayOfYear"),
+             * Display Form Title: Solved at - Day of Year
+             * Display Form ID: solved_at.dayOfYear
+             */ Default: newAttribute("solved_at.dayOfYear"),
         },
         /**
-         * Date Attribute: Createdat - Day of Week
-         * Date Attribute ID: createdat.dayOfWeek
-         */ CreatedatDayOfWeek: {
-            ref: idRef("createdat.dayOfWeek", "attribute"),
-            identifier: "createdat.dayOfWeek",
+         * Date Attribute: Solved at - Day of Week
+         * Date Attribute ID: solved_at.dayOfWeek
+         */ SolvedAtDayOfWeek: {
+            ref: idRef("solved_at.dayOfWeek", "attribute"),
+            identifier: "solved_at.dayOfWeek",
             /**
-             * Display Form Title: Createdat - Day of Week
-             * Display Form ID: createdat.dayOfWeek
-             */ Default: newAttribute("createdat.dayOfWeek"),
+             * Display Form Title: Solved at - Day of Week
+             * Display Form ID: solved_at.dayOfWeek
+             */ Default: newAttribute("solved_at.dayOfWeek"),
         },
         /**
-         * Date Attribute: Createdat - Day of Month
-         * Date Attribute ID: createdat.dayOfMonth
-         */ CreatedatDayOfMonth: {
-            ref: idRef("createdat.dayOfMonth", "attribute"),
-            identifier: "createdat.dayOfMonth",
+         * Date Attribute: Solved at - Day of Month
+         * Date Attribute ID: solved_at.dayOfMonth
+         */ SolvedAtDayOfMonth: {
+            ref: idRef("solved_at.dayOfMonth", "attribute"),
+            identifier: "solved_at.dayOfMonth",
             /**
-             * Display Form Title: Createdat - Day of Month
-             * Display Form ID: createdat.dayOfMonth
-             */ Default: newAttribute("createdat.dayOfMonth"),
+             * Display Form Title: Solved at - Day of Month
+             * Display Form ID: solved_at.dayOfMonth
+             */ Default: newAttribute("solved_at.dayOfMonth"),
         },
         /**
-         * Date Attribute: Createdat - Date
-         * Date Attribute ID: createdat.day
-         */ CreatedatDate: {
-            ref: idRef("createdat.day", "attribute"),
-            identifier: "createdat.day",
+         * Date Attribute: Solved at - Date
+         * Date Attribute ID: solved_at.day
+         */ SolvedAtDate: {
+            ref: idRef("solved_at.day", "attribute"),
+            identifier: "solved_at.day",
             /**
-             * Display Form Title: Createdat - Date
-             * Display Form ID: createdat.day
-             */ Default: newAttribute("createdat.day"),
+             * Display Form Title: Solved at - Date
+             * Display Form ID: solved_at.day
+             */ Default: newAttribute("solved_at.day"),
         },
     },
     /**
-     * Date Data Set Title: Solvedat
-     * Date Data Set ID: solvedat
-     */ Solvedat: {
-        ref: idRef("solvedat", "dataSet"),
-        identifier: "solvedat",
+     * Date Data Set Title: Created at
+     * Date Data Set ID: created_at
+     */ CreatedAt: {
+        ref: idRef("created_at", "dataSet"),
+        identifier: "created_at",
         /**
-         * Date Attribute: Solvedat - Year
-         * Date Attribute ID: solvedat.year
-         */ SolvedatYear: {
-            ref: idRef("solvedat.year", "attribute"),
-            identifier: "solvedat.year",
+         * Date Attribute: Created at - Year
+         * Date Attribute ID: created_at.year
+         */ CreatedAtYear: {
+            ref: idRef("created_at.year", "attribute"),
+            identifier: "created_at.year",
             /**
-             * Display Form Title: Solvedat - Year
-             * Display Form ID: solvedat.year
-             */ Default: newAttribute("solvedat.year"),
+             * Display Form Title: Created at - Year
+             * Display Form ID: created_at.year
+             */ Default: newAttribute("created_at.year"),
         },
         /**
-         * Date Attribute: Solvedat - Week of Year
-         * Date Attribute ID: solvedat.weekOfYear
-         */ SolvedatWeekOfYear: {
-            ref: idRef("solvedat.weekOfYear", "attribute"),
-            identifier: "solvedat.weekOfYear",
+         * Date Attribute: Created at - Week of Year
+         * Date Attribute ID: created_at.weekOfYear
+         */ CreatedAtWeekOfYear: {
+            ref: idRef("created_at.weekOfYear", "attribute"),
+            identifier: "created_at.weekOfYear",
             /**
-             * Display Form Title: Solvedat - Week of Year
-             * Display Form ID: solvedat.weekOfYear
-             */ Default: newAttribute("solvedat.weekOfYear"),
+             * Display Form Title: Created at - Week of Year
+             * Display Form ID: created_at.weekOfYear
+             */ Default: newAttribute("created_at.weekOfYear"),
         },
         /**
-         * Date Attribute: Solvedat - Week/Year
-         * Date Attribute ID: solvedat.week
-         */ SolvedatWeekYear: {
-            ref: idRef("solvedat.week", "attribute"),
-            identifier: "solvedat.week",
+         * Date Attribute: Created at - Week/Year
+         * Date Attribute ID: created_at.week
+         */ CreatedAtWeekYear: {
+            ref: idRef("created_at.week", "attribute"),
+            identifier: "created_at.week",
             /**
-             * Display Form Title: Solvedat - Week/Year
-             * Display Form ID: solvedat.week
-             */ Default: newAttribute("solvedat.week"),
+             * Display Form Title: Created at - Week/Year
+             * Display Form ID: created_at.week
+             */ Default: newAttribute("created_at.week"),
         },
         /**
-         * Date Attribute: Solvedat - Quarter of Year
-         * Date Attribute ID: solvedat.quarterOfYear
-         */ SolvedatQuarterOfYear: {
-            ref: idRef("solvedat.quarterOfYear", "attribute"),
-            identifier: "solvedat.quarterOfYear",
+         * Date Attribute: Created at - Quarter of Year
+         * Date Attribute ID: created_at.quarterOfYear
+         */ CreatedAtQuarterOfYear: {
+            ref: idRef("created_at.quarterOfYear", "attribute"),
+            identifier: "created_at.quarterOfYear",
             /**
-             * Display Form Title: Solvedat - Quarter of Year
-             * Display Form ID: solvedat.quarterOfYear
-             */ Default: newAttribute("solvedat.quarterOfYear"),
+             * Display Form Title: Created at - Quarter of Year
+             * Display Form ID: created_at.quarterOfYear
+             */ Default: newAttribute("created_at.quarterOfYear"),
         },
         /**
-         * Date Attribute: Solvedat - Quarter/Year
-         * Date Attribute ID: solvedat.quarter
-         */ SolvedatQuarterYear: {
-            ref: idRef("solvedat.quarter", "attribute"),
-            identifier: "solvedat.quarter",
+         * Date Attribute: Created at - Quarter/Year
+         * Date Attribute ID: created_at.quarter
+         */ CreatedAtQuarterYear: {
+            ref: idRef("created_at.quarter", "attribute"),
+            identifier: "created_at.quarter",
             /**
-             * Display Form Title: Solvedat - Quarter/Year
-             * Display Form ID: solvedat.quarter
-             */ Default: newAttribute("solvedat.quarter"),
+             * Display Form Title: Created at - Quarter/Year
+             * Display Form ID: created_at.quarter
+             */ Default: newAttribute("created_at.quarter"),
         },
         /**
-         * Date Attribute: Solvedat - Month of Year
-         * Date Attribute ID: solvedat.monthOfYear
-         */ SolvedatMonthOfYear: {
-            ref: idRef("solvedat.monthOfYear", "attribute"),
-            identifier: "solvedat.monthOfYear",
+         * Date Attribute: Created at - Month of Year
+         * Date Attribute ID: created_at.monthOfYear
+         */ CreatedAtMonthOfYear: {
+            ref: idRef("created_at.monthOfYear", "attribute"),
+            identifier: "created_at.monthOfYear",
             /**
-             * Display Form Title: Solvedat - Month of Year
-             * Display Form ID: solvedat.monthOfYear
-             */ Default: newAttribute("solvedat.monthOfYear"),
+             * Display Form Title: Created at - Month of Year
+             * Display Form ID: created_at.monthOfYear
+             */ Default: newAttribute("created_at.monthOfYear"),
         },
         /**
-         * Date Attribute: Solvedat - Month/Year
-         * Date Attribute ID: solvedat.month
-         */ SolvedatMonthYear: {
-            ref: idRef("solvedat.month", "attribute"),
-            identifier: "solvedat.month",
+         * Date Attribute: Created at - Month/Year
+         * Date Attribute ID: created_at.month
+         */ CreatedAtMonthYear: {
+            ref: idRef("created_at.month", "attribute"),
+            identifier: "created_at.month",
             /**
-             * Display Form Title: Solvedat - Month/Year
-             * Display Form ID: solvedat.month
-             */ Default: newAttribute("solvedat.month"),
+             * Display Form Title: Created at - Month/Year
+             * Display Form ID: created_at.month
+             */ Default: newAttribute("created_at.month"),
         },
         /**
-         * Date Attribute: Solvedat - Minute of Hour
-         * Date Attribute ID: solvedat.minuteOfHour
-         */ SolvedatMinuteOfHour: {
-            ref: idRef("solvedat.minuteOfHour", "attribute"),
-            identifier: "solvedat.minuteOfHour",
+         * Date Attribute: Created at - Minute of Hour
+         * Date Attribute ID: created_at.minuteOfHour
+         */ CreatedAtMinuteOfHour: {
+            ref: idRef("created_at.minuteOfHour", "attribute"),
+            identifier: "created_at.minuteOfHour",
             /**
-             * Display Form Title: Solvedat - Minute of Hour
-             * Display Form ID: solvedat.minuteOfHour
-             */ Default: newAttribute("solvedat.minuteOfHour"),
+             * Display Form Title: Created at - Minute of Hour
+             * Display Form ID: created_at.minuteOfHour
+             */ Default: newAttribute("created_at.minuteOfHour"),
         },
         /**
-         * Date Attribute: Solvedat - Minute
-         * Date Attribute ID: solvedat.minute
-         */ SolvedatMinute: {
-            ref: idRef("solvedat.minute", "attribute"),
-            identifier: "solvedat.minute",
+         * Date Attribute: Created at - Minute
+         * Date Attribute ID: created_at.minute
+         */ CreatedAtMinute: {
+            ref: idRef("created_at.minute", "attribute"),
+            identifier: "created_at.minute",
             /**
-             * Display Form Title: Solvedat - Minute
-             * Display Form ID: solvedat.minute
-             */ Default: newAttribute("solvedat.minute"),
+             * Display Form Title: Created at - Minute
+             * Display Form ID: created_at.minute
+             */ Default: newAttribute("created_at.minute"),
         },
         /**
-         * Date Attribute: Solvedat - Hour of Day
-         * Date Attribute ID: solvedat.hourOfDay
-         */ SolvedatHourOfDay: {
-            ref: idRef("solvedat.hourOfDay", "attribute"),
-            identifier: "solvedat.hourOfDay",
+         * Date Attribute: Created at - Hour of Day
+         * Date Attribute ID: created_at.hourOfDay
+         */ CreatedAtHourOfDay: {
+            ref: idRef("created_at.hourOfDay", "attribute"),
+            identifier: "created_at.hourOfDay",
             /**
-             * Display Form Title: Solvedat - Hour of Day
-             * Display Form ID: solvedat.hourOfDay
-             */ Default: newAttribute("solvedat.hourOfDay"),
+             * Display Form Title: Created at - Hour of Day
+             * Display Form ID: created_at.hourOfDay
+             */ Default: newAttribute("created_at.hourOfDay"),
         },
         /**
-         * Date Attribute: Solvedat - Hour
-         * Date Attribute ID: solvedat.hour
-         */ SolvedatHour: {
-            ref: idRef("solvedat.hour", "attribute"),
-            identifier: "solvedat.hour",
+         * Date Attribute: Created at - Hour
+         * Date Attribute ID: created_at.hour
+         */ CreatedAtHour: {
+            ref: idRef("created_at.hour", "attribute"),
+            identifier: "created_at.hour",
             /**
-             * Display Form Title: Solvedat - Hour
-             * Display Form ID: solvedat.hour
-             */ Default: newAttribute("solvedat.hour"),
+             * Display Form Title: Created at - Hour
+             * Display Form ID: created_at.hour
+             */ Default: newAttribute("created_at.hour"),
         },
         /**
-         * Date Attribute: Solvedat - Day of Year
-         * Date Attribute ID: solvedat.dayOfYear
-         */ SolvedatDayOfYear: {
-            ref: idRef("solvedat.dayOfYear", "attribute"),
-            identifier: "solvedat.dayOfYear",
+         * Date Attribute: Created at - Day of Year
+         * Date Attribute ID: created_at.dayOfYear
+         */ CreatedAtDayOfYear: {
+            ref: idRef("created_at.dayOfYear", "attribute"),
+            identifier: "created_at.dayOfYear",
             /**
-             * Display Form Title: Solvedat - Day of Year
-             * Display Form ID: solvedat.dayOfYear
-             */ Default: newAttribute("solvedat.dayOfYear"),
+             * Display Form Title: Created at - Day of Year
+             * Display Form ID: created_at.dayOfYear
+             */ Default: newAttribute("created_at.dayOfYear"),
         },
         /**
-         * Date Attribute: Solvedat - Day of Week
-         * Date Attribute ID: solvedat.dayOfWeek
-         */ SolvedatDayOfWeek: {
-            ref: idRef("solvedat.dayOfWeek", "attribute"),
-            identifier: "solvedat.dayOfWeek",
+         * Date Attribute: Created at - Day of Week
+         * Date Attribute ID: created_at.dayOfWeek
+         */ CreatedAtDayOfWeek: {
+            ref: idRef("created_at.dayOfWeek", "attribute"),
+            identifier: "created_at.dayOfWeek",
             /**
-             * Display Form Title: Solvedat - Day of Week
-             * Display Form ID: solvedat.dayOfWeek
-             */ Default: newAttribute("solvedat.dayOfWeek"),
+             * Display Form Title: Created at - Day of Week
+             * Display Form ID: created_at.dayOfWeek
+             */ Default: newAttribute("created_at.dayOfWeek"),
         },
         /**
-         * Date Attribute: Solvedat - Day of Month
-         * Date Attribute ID: solvedat.dayOfMonth
-         */ SolvedatDayOfMonth: {
-            ref: idRef("solvedat.dayOfMonth", "attribute"),
-            identifier: "solvedat.dayOfMonth",
+         * Date Attribute: Created at - Day of Month
+         * Date Attribute ID: created_at.dayOfMonth
+         */ CreatedAtDayOfMonth: {
+            ref: idRef("created_at.dayOfMonth", "attribute"),
+            identifier: "created_at.dayOfMonth",
             /**
-             * Display Form Title: Solvedat - Day of Month
-             * Display Form ID: solvedat.dayOfMonth
-             */ Default: newAttribute("solvedat.dayOfMonth"),
+             * Display Form Title: Created at - Day of Month
+             * Display Form ID: created_at.dayOfMonth
+             */ Default: newAttribute("created_at.dayOfMonth"),
         },
         /**
-         * Date Attribute: Solvedat - Date
-         * Date Attribute ID: solvedat.day
-         */ SolvedatDate: {
-            ref: idRef("solvedat.day", "attribute"),
-            identifier: "solvedat.day",
+         * Date Attribute: Created at - Date
+         * Date Attribute ID: created_at.day
+         */ CreatedAtDate: {
+            ref: idRef("created_at.day", "attribute"),
+            identifier: "created_at.day",
             /**
-             * Display Form Title: Solvedat - Date
-             * Display Form ID: solvedat.day
-             */ Default: newAttribute("solvedat.day"),
+             * Display Form Title: Created at - Date
+             * Display Form ID: created_at.day
+             */ Default: newAttribute("created_at.day"),
         },
     },
 };
 export const Insights = {
     /**
-     * Insight Title: Orders / Month
-     * Insight ID: cc348267-6c26-4a48-a1c0-149df6a2d4c3
+     * Insight Title: Orders Status / Last 7 days
+     * Insight ID: f9930b6d-cc20-4c89-8c23-7c2ac0f021d1
      */
-    OrdersMonth: "cc348267-6c26-4a48-a1c0-149df6a2d4c3",
+    OrdersStatusLast7Days: "f9930b6d-cc20-4c89-8c23-7c2ac0f021d1",
     /**
-     * Insight Title: Orders Status / Week
-     * Insight ID: a1e6cd11-8806-4b6e-9cdf-dac4b6742715
-     */ OrdersStatusWeek: "a1e6cd11-8806-4b6e-9cdf-dac4b6742715",
+     * Insight Title: Orders / Month
+     * Insight ID: a8d3e41c-c1c1-48f9-903c-ec6fc367d29e
+     */ OrdersMonth: "a8d3e41c-c1c1-48f9-903c-ec6fc367d29e",
 };
 export const Dashboards = {
     /**
-     * Dashboard Title: Short Term
-     * Dashboard ID: 23f5aac4-1500-4679-9c4e-5e2069378607
+     * Dashboard Title: Long Term Analysis
+     * Dashboard ID: 225e8460-b109-4630-bbdc-c78255f018a9
      */
-    ShortTerm: "23f5aac4-1500-4679-9c4e-5e2069378607",
+    LongTermAnalysis: "225e8460-b109-4630-bbdc-c78255f018a9",
+    /**
+     * Dashboard Title: Short Term Analysis
+     * Dashboard ID: 3a9e7d89-4377-470f-881a-318c02ca0b62
+     */ ShortTermAnalysis: "3a9e7d89-4377-470f-881a-318c02ca0b62",
 };

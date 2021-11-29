@@ -1,13 +1,13 @@
 create table users
 (
-    id        serial not null,
-    firstName varchar,
-    lastName  varchar,
-    city      varchar,
-    age       numeric,
-    gender    varchar,
+    id         serial not null,
+    first_name varchar,
+    last_name  varchar,
+    city       varchar,
+    age        numeric,
+    gender     varchar,
     primary key (id)
-)
+);
 
 create table products
 (
@@ -17,25 +17,25 @@ create table products
     price decimal,
     cost  decimal,
     primary key (id)
-)
+);
 
 create table orders
 (
-    id        serial not null,
-    userId    serial not null,
-    status    varchar,
-    createdAt date,
-    solvedAt  date,
+    id         serial not null,
+    user_id    integer not null,
+    status     varchar,
+    created_at date,
+    solved_at  date,
     primary key (id),
-    foreign key (userId) references users (id)
-)
+    foreign key (user_id) references users (id)
+);
 
-create table orderItems
+create table order_items
 (
-    id        serial not null,
-    orderId   serial not null,
-    productId serial not null,
-    quantity  numeric,
-    foreign key (orderId) references orders (id),
-    foreign key (productId) references products (id)
-)
+    id         serial not null,
+    order_id   integer not null,
+    product_id integer not null,
+    quantity   numeric,
+    foreign key (order_id) references orders (id),
+    foreign key (product_id) references products (id)
+);
